@@ -10,9 +10,9 @@ def search_binary( mylist, item):
 		guess = list1[mid]
 
 		if guess == item:
-			return mid
+			return mid - 1
 		elif guess > item:
-			high = mid
+			high = mid + 1
 		elif guess < item:
 			low = mid
 
