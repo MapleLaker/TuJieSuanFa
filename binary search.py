@@ -5,7 +5,7 @@ def search_binary( mylist, item):
 	low = 0
 	high = len(mylist)-1
 
-	while 1:
+	while low <= high:
 		mid = (low + high)/2
 		guess = list1[mid]
 
@@ -16,7 +16,7 @@ def search_binary( mylist, item):
 		elif guess < item:
 			low = mid
 
-	return mid
+	return None
 
 list1 = [1,2,3,4,5]
 a = search_binary(list1, 1)
